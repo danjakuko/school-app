@@ -13,6 +13,9 @@ public class Teacher extends AbstractEntity {
     private String firstName;
     @Column(name = "last_name")
     private String lastName;
+    @Column(name = "subject")
+    private String subject;
     @OneToMany(mappedBy = "teacher")
     private List<Course> courseList;
+
 }
