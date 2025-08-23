@@ -1,12 +1,12 @@
-package entities;
+package org.example.entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 import lombok.Data;
 
 @Entity
-@Table (name = "assignments")
+@Table (name = "students")
 @Data
+public class Student extends AbstractEntity {
 
-public class Assignment extends AbstractEntity {
 }
