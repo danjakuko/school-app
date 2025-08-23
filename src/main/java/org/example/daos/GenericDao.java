@@ -6,11 +6,11 @@ import org.hibernate.query.Query;
 
 import java.util.List;
 
-public abstract class GenericRepository<T, ID> {
+public abstract class GenericDao<T, ID> {
     private final Session session;
     private final Class<T> aClass;
 
-    public GenericRepository(Session session, Class<T> aClass) {
+    public GenericDao(Session session, Class<T> aClass) {
         this.session = session;
         this.aClass = aClass;
     }
