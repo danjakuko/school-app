@@ -16,7 +16,6 @@ public class HibernateUtils {
             configuration.addAnnotatedClass(Course.class);
             configuration.addAnnotatedClass(Student.class);
             configuration.addAnnotatedClass(Teacher.class);
-            configuration.addAnnotatedClass(AbstractEntity.class);
             sessionFactory = configuration.buildSessionFactory();
         }
         return sessionFactory;
