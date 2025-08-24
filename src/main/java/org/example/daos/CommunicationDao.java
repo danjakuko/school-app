@@ -10,7 +10,7 @@ import java.util.List;
 public class CommunicationDao extends GenericDao<Communication, Long> {
     private final Session session;
 
-    private CommunicationDao(Session session) {
+    public CommunicationDao(Session session) {
         super(session, Communication.class);
         this.session = session;
     }
